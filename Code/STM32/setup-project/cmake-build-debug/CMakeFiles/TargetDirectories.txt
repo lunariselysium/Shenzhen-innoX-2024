@@ -1,0 +1,3 @@
+D:/other/Shenzhen-innoX-2024/Code/STM32/setup-project/cmake-build-debug/CMakeFiles/setup-project.elf.dir
+D:/other/Shenzhen-innoX-2024/Code/STM32/setup-project/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/other/Shenzhen-innoX-2024/Code/STM32/setup-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
