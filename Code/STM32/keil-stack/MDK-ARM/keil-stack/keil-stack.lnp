@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"keil-stack\startup_stm32f407xx.o"
+"keil-stack\main.o"
+"keil-stack\gpio.o"
+"keil-stack\stm32f4xx_it.o"
+"keil-stack\stm32f4xx_hal_msp.o"
+"keil-stack\stm32f4xx_hal_tim.o"
+"keil-stack\stm32f4xx_hal_tim_ex.o"
+"keil-stack\stm32f4xx_hal_rcc.o"
+"keil-stack\stm32f4xx_hal_rcc_ex.o"
+"keil-stack\stm32f4xx_hal_flash.o"
+"keil-stack\stm32f4xx_hal_flash_ex.o"
+"keil-stack\stm32f4xx_hal_flash_ramfunc.o"
+"keil-stack\stm32f4xx_hal_gpio.o"
+"keil-stack\stm32f4xx_hal_dma_ex.o"
+"keil-stack\stm32f4xx_hal_dma.o"
+"keil-stack\stm32f4xx_hal_pwr.o"
+"keil-stack\stm32f4xx_hal_pwr_ex.o"
+"keil-stack\stm32f4xx_hal_cortex.o"
+"keil-stack\stm32f4xx_hal.o"
+"keil-stack\stm32f4xx_hal_exti.o"
+"keil-stack\system_stm32f4xx.o"
+--strict --scatter "keil-stack\keil-stack.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "keil-stack.map" -o keil-stack\keil-stack.axf
