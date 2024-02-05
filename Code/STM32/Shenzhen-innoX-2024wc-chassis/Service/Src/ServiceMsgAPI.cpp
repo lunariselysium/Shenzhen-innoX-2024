@@ -57,7 +57,7 @@ SRAM_SET_CCM_UNINT Msg_spi_rx_data_processed_t spi_rx_data_processed;
 SRAM_SET_CCM_UNINT static uint8_t *usb_buf_now = nullptr;
 SRAM_SET_CCM_UNINT static uint16_t usb_tx_len = 0;
 
-SRAM_SET_CCM_UNINT static uint8_t usb_tx_buf[2][384];
+SRAM_SET_CCM_UNINT static uint8_t usb_tx_buf[2][512];
 SRAM_SET_CCM_UNINT static uint8_t usb_rx_buf[USB_MAX_LEN];
 SRAM_SET_CCM_UNINT Msg_usb_rx_data_processed_t usb_rx_data_processed;
 
@@ -133,7 +133,7 @@ SRAM_SET_CCM uint8_t MsgSchedulerStack[1536] = {0};
             memset(&chs_remoter_info,0,sizeof(chs_remoter_info));
         }
 
-        mav_gpio.level = LL_GPIO_IsInputPinSet(KEY_GPIO_Port, KEY_Pin);
+        // mav_gpio.level = LL_GPIO_IsInputPinSet(KEY_GPIO_Port, KEY_Pin);
         mav_gpio.level = LL_GPIO_IsInputPinSet(EXTERNAL_INPUT_GPIO_Port, EXTERNAL_INPUT_Pin);
 
 
@@ -150,7 +150,6 @@ SRAM_SET_CCM uint8_t MsgSchedulerStack[1536] = {0};
             mavlink_msg_chs_remoter_info_encode(CHS_SYSTEM_ID::CHS_ID_CHASSIS, CHS_SYSTEM_ID::CHS_ID_CHASSIS, &msg_tx,
                                                 &chs_remoter_info);
             usb_tx_len += mavlink_msg_to_send_buffer(usb_buf_now + usb_tx_len, &msg_tx);
-
 
             mavlink_msg_chs_gpio_read_encode(CHS_ID_CHASSIS,CHS_ID_CHASSIS,&msg_tx,&mav_gpio);
             usb_tx_len += mavlink_msg_to_send_buffer(usb_buf_now + usb_tx_len, &msg_tx);

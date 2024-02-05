@@ -20,7 +20,7 @@ SRAM_SET_CCM uint8_t ServoThreadStack[256] = {0};
     /*Creat Wheel Topic*/
     om_config_topic(nullptr, "CA", "Servo", sizeof(Msg_Servo_t));
 
-    Msg_Servo_t msg_servo{.enable=false, .servo={1499, 1499, 1499, 1499, 1499, 1499, 1499},};
+    Msg_Servo_t msg_servo{.enable=false, .servo={2474, 849, 499, 1499, 499, 1499, 1499},};
 
     bool enable = false;
     uint32_t lose_cnt;

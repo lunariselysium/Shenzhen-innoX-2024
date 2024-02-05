@@ -14,6 +14,7 @@ uint8_t data_rx_buf[20];
     UNUSED(initial_input);
     /* Remoter Topic */
     om_topic_t *remoter_topic = om_config_topic(nullptr, "CA", "Remoter", sizeof(Msg_Remoter_t));
+    tx_thread_sleep(100);
     Msg_Remoter_t msg_remoter{};
     HAL_UARTEx_ReceiveToIdle_DMA(&huart3, data_rx_buf, 20);
     for (;;) {

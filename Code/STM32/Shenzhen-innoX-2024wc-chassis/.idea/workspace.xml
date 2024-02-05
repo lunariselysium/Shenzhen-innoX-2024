@@ -17,13 +17,29 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Release-MinGW" ENABLED="true" CONFIG_NAME="Release" TOOLCHAIN_NAME="MinGW" />
+      <configuration PROFILE_NAME="RelWithDebInfo-MinGW" ENABLED="true" CONFIG_NAME="RelWithDebInfo" TOOLCHAIN_NAME="MinGW" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="babba83a-2a78-4ae1-bf29-388873eadff8" name="更改" comment="Fix a bug in pid controller">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/tim.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FishChassis.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/FishChassis.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/Mavlink" beforeDir="false" afterPath="$PROJECT_DIR$/Module/Mavlink" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/Mavlink/FishCom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module/Mavlink/FishCom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/Mavlink/FishCom/FishCom.h" beforeDir="false" afterPath="$PROJECT_DIR$/Module/Mavlink/FishCom/FishCom.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/Mavlink/FishCom/mavlink.h" beforeDir="false" afterPath="$PROJECT_DIR$/Module/Mavlink/FishCom/mavlink.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/Mavlink/FishCom/testsuite.h" beforeDir="false" afterPath="$PROJECT_DIR$/Module/Mavlink/FishCom/testsuite.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/Mavlink/FishCom/version.h" beforeDir="false" afterPath="$PROJECT_DIR$/Module/Mavlink/FishCom/version.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module/OneMessage/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Module/OneMessage/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Service/Src/ServiceMsgAPI.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Service/Src/ServiceMsgAPI.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Src/ServiceRemoter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Service/Src/ServiceRemoter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task/Src/TaskServo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Task/Src/TaskServo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task/Src/TaskWheel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Task/Src/TaskWheel.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1652,7 +1668,7 @@
       </map>
     </option>
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release-MinGW" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:RelWithDebInfo-MinGW" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -1693,7 +1709,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.build",
+    "settings.editor.selected.configurable": "CMakeSettings",
     "structure.view.defaults.are.configured": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -1708,17 +1724,17 @@
     <option name="rtosType" value="Azure RTOS ThreadX" />
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.OCD FishChassis">
-    <configuration name="FishChassis.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FishChassis" TARGET_NAME="FishChassis.elf" CONFIG_NAME="Release-MinGW" RUN_TARGET_PROJECT_NAME="FishChassis" RUN_TARGET_NAME="FishChassis.elf">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FishChassis.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FishChassis" TARGET_NAME="FishChassis.elf" CONFIG_NAME="RelWithDebInfo-MinGW" RUN_TARGET_PROJECT_NAME="FishChassis" RUN_TARGET_NAME="FishChassis.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OneMessage" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FishChassis" TARGET_NAME="OneMessage" CONFIG_NAME="Release-MinGW">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="OneMessage" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FishChassis" TARGET_NAME="OneMessage" CONFIG_NAME="RelWithDebInfo-MinGW">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -1793,7 +1809,11 @@
       <workItem from="1706751787360" duration="3548000" />
       <workItem from="1706759304246" duration="5217000" />
       <workItem from="1706782549883" duration="245000" />
-      <workItem from="1706788046510" duration="10040000" />
+      <workItem from="1706788046510" duration="13530000" />
+      <workItem from="1706870261276" duration="331000" />
+      <workItem from="1706874557960" duration="1375000" />
+      <workItem from="1706966077672" duration="1811000" />
+      <workItem from="1707049815813" duration="2212000" />
     </task>
     <task id="LOCAL-00001" summary="Fix a bug in pid controller">
       <option name="closed" value="true" />
@@ -1831,10 +1851,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fix a bug in pid controller" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Service/Src/ServiceMsgAPI.cpp</url>
+          <line>153</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="com.jetbrains.cidr.embedded.openocd.conf.type">
         <watch expression="chs_remoter_info" />
         <watch expression="usb_tx_len" />
+        <watch expression="msg_remoter" />
       </configuration>
     </watches-manager>
   </component>
